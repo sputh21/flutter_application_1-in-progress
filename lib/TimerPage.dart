@@ -1,14 +1,24 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
+import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter_application_1/navBar.dart';
 
-void main() => runApp(MaterialApp(
-      home: MyApp(),
-    ));
+class CountDown extends StatefulWidget {
+  const CountDown({Key? key}) : super(key: key);
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  @override
+  State<CountDown> createState() => _CountDownState();
+}
+
+class _CountDownState extends State<CountDown> {
+  final StopWatchTimer _stopWatch = StopWatchTimer();
+  final _isHour = true;
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _stopWatch.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
