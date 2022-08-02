@@ -30,76 +30,193 @@ class MyApp extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               children: [
                 SizedBox(width: 10),
-                Container(
-                  width: 160.0,
-                  decoration: BoxDecoration(
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      shadowColor: Colors.white60,
+                      primary: Color.fromARGB(0, 255, 255, 255),
+                      padding: EdgeInsets.all(10),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20))),
+                  child: Container(
+                    height: 130,
+                    width: 150,
+                    decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.red,
-                      // ignore: prefer_const_literals_to_create_immutables
-                      boxShadow: [
-                        BoxShadow(
-                            color: Color.fromARGB(129, 0, 0, 0),
-                            spreadRadius: 3)
-                      ]),
-                ),
-                SizedBox(width: 10),
-                Container(
-                  width: 160.0,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.blue,
-                      // ignore: prefer_const_literals_to_create_immutables
-                      boxShadow: [
-                        BoxShadow(
-                            color: Color.fromARGB(129, 0, 0, 0),
-                            spreadRadius: 3)
-                      ]),
-                ),
-                SizedBox(width: 10),
-                Container(
-                  width: 160.0,
-                  //color: Colors.green,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.green,
-                      // ignore: prefer_const_literals_to_create_immutables
-                      boxShadow: [
-                        BoxShadow(
-                            color: Color.fromARGB(129, 0, 0, 0),
-                            spreadRadius: 3)
-                      ]),
-                ),
-                SizedBox(width: 10),
-                Container(
-                  width: 160.0,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.yellow,
-                      // ignore: prefer_const_literals_to_create_immutables
-                      boxShadow: [
-                        BoxShadow(
-                            color: Color.fromARGB(129, 0, 0, 0),
-                            spreadRadius: 3)
-                      ]),
-                ),
-                SizedBox(width: 10),
-                Container(
-                  width: 160.0,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.orange,
-                      // ignore: prefer_const_literals_to_create_immutables
-                      boxShadow: [
-                        BoxShadow(
-                            color: Color.fromARGB(129, 0, 0, 0),
-                            spreadRadius: 3)
-                      ]),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                              Color.fromARGB(136, 0, 0, 0), BlendMode.darken),
+                          image: AssetImage('assets/Google.jpg'),
+                          fit: BoxFit.cover),
+                    ),
+                    child: Text("Google",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(height: 3.4, fontSize: 30)),
+                  ),
+                  // ),
+                  onPressed: () {},
                 ),
                 SizedBox(width: 10),
                 ElevatedButton(
-                    onPressed: () {},
-                    child: Text("hello"),
-                    style: ElevatedButton.styleFrom()),
+                  style: ElevatedButton.styleFrom(
+                      shadowColor: Colors.red[700],
+                      primary: Color.fromARGB(0, 255, 255, 255),
+                      padding: EdgeInsets.all(10),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20))),
+                  child: Container(
+                    height: 130,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                              Color.fromARGB(136, 0, 0, 0), BlendMode.darken),
+                          image: AssetImage('assets/netflix.jpg'),
+                          fit: BoxFit.cover),
+                    ),
+                    child: Text("Netflix",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(height: 3.4, fontSize: 30)),
+                  ),
+                  // ),
+                  onPressed: () {},
+                ),
+                SizedBox(width: 10),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      shadowColor: Colors.blue[300],
+                      primary: Color.fromARGB(0, 255, 255, 255),
+                      padding: EdgeInsets.all(10),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20))),
+                  child: Container(
+                    height: 130,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                              Color.fromARGB(136, 0, 0, 0), BlendMode.darken),
+                          image: AssetImage('assets/meta.jpg'),
+                          fit: BoxFit.cover),
+                    ),
+                    child: Text("Meta",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(height: 3.4, fontSize: 30)),
+                  ),
+                  // ),
+                  onPressed: () {},
+                ),
+                SizedBox(width: 10),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      primary: Color.fromARGB(0, 255, 255, 255),
+                      padding: EdgeInsets.all(10),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20))),
+                  child: Container(
+                    height: 130,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                              Color.fromARGB(136, 0, 0, 0), BlendMode.darken),
+                          image: AssetImage('assets/apple.jpg'),
+                          fit: BoxFit.cover),
+                    ),
+                    child: Text("Apple",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(height: 3.4, fontSize: 30)),
+                  ),
+                  // ),
+                  onPressed: () {},
+                ),
+                SizedBox(width: 10),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      shadowColor: Colors.green[800],
+                      primary: Color.fromARGB(0, 255, 255, 255),
+                      padding: EdgeInsets.all(10),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20))),
+                  child: Container(
+                    height: 130,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                              Color.fromARGB(136, 0, 0, 0), BlendMode.darken),
+                          image: AssetImage('assets/microsoft.jpg'),
+                          fit: BoxFit.cover),
+                    ),
+                    child: Text("Microsoft",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(height: 3.4, fontSize: 30)),
+                  ),
+                  // ),
+                  onPressed: () {},
+                ),
+                SizedBox(width: 20),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      shadowColor: Colors.orange[800],
+                      primary: Color.fromARGB(0, 255, 255, 255),
+                      padding: EdgeInsets.all(10),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20))),
+                  child: Container(
+                    height: 130,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                              Color.fromARGB(136, 0, 0, 0), BlendMode.darken),
+                          image: AssetImage('assets/amazon.jpg'),
+                          fit: BoxFit.cover),
+                    ),
+                    child: Text("Amazon",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(height: 3.4, fontSize: 30)),
+                  ),
+                  // ),
+                  onPressed: () {},
+                ),
+                SizedBox(width: 10),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      shadowColor: Colors.orange[800],
+                      primary: Color.fromARGB(0, 255, 255, 255),
+                      padding: EdgeInsets.all(10),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20))),
+                  child: Container(
+                    height: 130,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                              Color.fromARGB(136, 0, 0, 0), BlendMode.darken),
+                          image: AssetImage('assets/amazon.jpg'),
+                          fit: BoxFit.cover),
+                    ),
+                    child: Text("JP Morgan",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(height: 3.4, fontSize: 30)),
+                  ),
+                  // ),
+                  onPressed: () {},
+                ),
               ],
             )));
   }
