@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/navBar.dart';
+import 'dialogBoxes.dart';
 
 void main() => runApp(MaterialApp(
       home: MyApp(),
@@ -54,7 +55,9 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(height: 3.4, fontSize: 30)),
                   ),
                   // ),
-                  onPressed: () {},
+                  onPressed: () {
+                    showGoogleDialog(context);
+                  },
                 ),
                 SizedBox(width: 10),
                 ElevatedButton(
