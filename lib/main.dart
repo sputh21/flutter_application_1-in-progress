@@ -84,7 +84,9 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(height: 3.4, fontSize: 30)),
                   ),
                   // ),
-                  onPressed: () {},
+                  onPressed: () {
+                    showNetflixDialog(context);
+                  },
                 ),
                 SizedBox(width: 10),
                 ElevatedButton(
