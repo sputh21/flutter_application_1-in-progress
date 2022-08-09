@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/TimerPage.dart';
 import 'package:flutter_application_1/main.dart';
+import 'package:flutter_application_1/completedList.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({Key? key}) : super(key: key);
@@ -17,6 +18,11 @@ class NavBar extends StatelessWidget {
     void _homepage() {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => const MyApp()));
+    }
+
+    void _completedList() {
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => const CompletedList()));
     }
 
     return Drawer(
@@ -56,6 +62,7 @@ class NavBar extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.check_box, size: 40),
               title: Text("Completed Problems"),
+              onTap: _completedList,
             ),
             const Divider(
                 color: Color.fromARGB(157, 0, 0, 0), height: 1, thickness: 1.0),

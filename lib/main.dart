@@ -113,7 +113,9 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(height: 3.4, fontSize: 30)),
                   ),
                   // ),
-                  onPressed: () {},
+                  onPressed: () {
+                    showMetaDialog(context);
+                  },
                 ),
                 SizedBox(width: 10),
                 ElevatedButton(
@@ -139,7 +141,9 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(height: 3.4, fontSize: 30)),
                   ),
                   // ),
-                  onPressed: () {},
+                  onPressed: () {
+                    showAppleDialog(context);
+                  },
                 ),
                 SizedBox(width: 10),
                 ElevatedButton(
@@ -166,7 +170,9 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(height: 3.4, fontSize: 30)),
                   ),
                   // ),
-                  onPressed: () {},
+                  onPressed: () {
+                    showMicrosoftDialog(context);
+                  },
                 ),
                 SizedBox(width: 20),
                 ElevatedButton(
@@ -193,35 +199,11 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(height: 3.4, fontSize: 30)),
                   ),
                   // ),
-                  onPressed: () {},
+                  onPressed: () {
+                    showAmzonDialog(context);
+                  },
                 ),
                 SizedBox(width: 10),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      shadowColor: Colors.orange[800],
-                      primary: Color.fromARGB(0, 255, 255, 255),
-                      padding: EdgeInsets.all(10),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20))),
-                  child: Container(
-                    height: 130,
-                    width: 150,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Color.fromARGB(255, 0, 0, 0),
-                      image: DecorationImage(
-                          colorFilter: ColorFilter.mode(
-                              Color.fromARGB(136, 0, 0, 0), BlendMode.darken),
-                          image: AssetImage('assets/amazon.jpg'),
-                          fit: BoxFit.cover),
-                    ),
-                    child: Text("JP Morgan",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(height: 3.4, fontSize: 30)),
-                  ),
-                  // ),
-                  onPressed: () {},
-                ),
               ],
             )));
   }
