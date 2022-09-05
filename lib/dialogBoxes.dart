@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors, duplicate_ignore, sort_child_properties_last
+// ignore_for_file: file_names, prefer_const_constructors, duplicate_ignore, sort_child_properties_last, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -12,7 +12,7 @@ void showGoogleDialog(BuildContext context) {
       pageBuilder: (_, __, ___) {
         return Center(
             child: Container(
-          height: 500,
+          height: 600,
           width: 700,
           margin: EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
@@ -53,6 +53,72 @@ void showGoogleDialog(BuildContext context) {
               ),
               textAlign: TextAlign.center,
             ),
+            Container(
+                height: 500,
+                width: 650,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.green[200],
+                ),
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                          textAlign: TextAlign.center,
+                          "1. Resume Screening: A recruiter will take a look at your application and resume. It is recommended that you have a LinkedIn and Github as well",
+                          style: TextStyle(
+                            decoration: TextDecoration.none,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                          )),
+                      SizedBox(height: 17),
+                      Text(
+                          textAlign: TextAlign.center,
+                          "2. A recruiter will call if your resume passed the screening. It will last around 20 to 30 minutes and will be non-technical. Questions revolve around your background. Stay connected to the recruiter, since they will answer most of your questions",
+                          style: TextStyle(
+                            decoration: TextDecoration.none,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                          )),
+                      SizedBox(height: 17),
+                      Text(
+                          textAlign: TextAlign.center,
+                          "3. Here is what all the LeetCode preperation comes into play, the online technical interview. The interview will last 45-60 minutes on Google meets. For SWE roles, a Doc will be shared and an algorithm style question will be given. Good Luck and remain calm!",
+                          style: TextStyle(
+                            decoration: TextDecoration.none,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                          )),
+                      SizedBox(height: 17),
+                      Text(
+                          textAlign: TextAlign.center,
+                          "4. The technical interviews continue! The onsite interview is the lengthiest part, and may be at Google's offices or by video. They will be 6 back to back interviews lasting 45 minutes each, one of them being an informal lunch interview. Good Luck!",
+                          style: TextStyle(
+                            decoration: TextDecoration.none,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                          )),
+                      SizedBox(height: 17),
+                      Text(
+                        textAlign: TextAlign.center,
+                        "5. After the interviews, interviewers grade your performance using a standard feedback form. Feedback forms and recommendation then go to a third party hiring committee to eliminiate bias. If a response doesn't come past a week or two, politely contact your recruiter.",
+                        style: TextStyle(
+                          decoration: TextDecoration.none,
+                          fontSize: 15,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      SizedBox(height: 17),
+                      Text(
+                        textAlign: TextAlign.center,
+                        "6. If everything went well, congratulations, your hired! The final step is team-matching and salary negotiation. You'll have interviews with team members to find your best fit, and an interview with your recruiter to negotiate your salary. If you got rejected, you can reapply in 90 days.",
+                        style: TextStyle(
+                          decoration: TextDecoration.none,
+                          fontSize: 15,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      )
+                    ]))
           ])),
         ));
       });
@@ -110,6 +176,94 @@ void showNetflixDialog(BuildContext context) {
               ),
               textAlign: TextAlign.center,
             ),
+            Column(
+              children: [
+                Container(
+                  width: 650,
+                  height: 65,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "1. The first step is the recruiter pre-screen. If a recruiter likes your resume, he/she will give you a call for about 30 minutes. They will more than likely gauge enthusiasm for the position you are applying to.",
+                      style: TextStyle(
+                        decoration: TextDecoration.none,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 660,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "2. If you get through to the next round, you will not have the technical screen, which is two parts. The first part is a 15 minute behavioral interview, and the second part is the technical round. You can either do technical questions or do a 6-8 hour take home coding assessment.",
+                      style: TextStyle(
+                        decoration: TextDecoration.none,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 660,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "3. This is the first part of the On Site interviews. They will be a mix of 4 different interviews, some one on one, and some two to one. There are 4 segments of 45 minutes each and they will consist of technical questions, white board questions, and company culture questions.",
+                      style: TextStyle(
+                        decoration: TextDecoration.none,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 660,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "4. The second part of the on-site interviews will be more open ended, and will consist of three 45 minute sessions. These will focus on higher level technical questions and how you can be a best fit for the company. These could be conducted by either hiring managers or engineers.",
+                      style: TextStyle(
+                        decoration: TextDecoration.none,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 660,
+                  height: 76,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "5. The hiring team must reach a unanimous decision to hire you. Even if one team member disagrees, its an automatic disqualification. The acceptance offer should come after about 2 weeks after your interviews are complete. Any longer and that usually means you got rejected, and no feedback is commonly provided. You can apply again after 6 months to a year. ",
+                      style: TextStyle(
+                        decoration: TextDecoration.none,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                      )),
+                ),
+              ],
+            )
           ])),
         ));
       });

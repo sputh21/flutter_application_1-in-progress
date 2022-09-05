@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/TimerPage.dart';
 import 'package:flutter_application_1/main.dart';
-import 'package:flutter_application_1/database%20files/completedList.dart';
+import 'package:flutter_application_1/completedList.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({Key? key}) : super(key: key);
