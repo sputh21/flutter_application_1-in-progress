@@ -2,7 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:stop_watch_timer/stop_watch_timer.dart';
+
 import 'package:flutter_application_1/navBar.dart';
 import 'dart:async';
 
@@ -19,7 +19,6 @@ class _CountDownState extends State<CountDown> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _stopwatch = Stopwatch();
     t = Timer.periodic(Duration(milliseconds: 30), (timer) {
