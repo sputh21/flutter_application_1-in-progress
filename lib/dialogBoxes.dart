@@ -12,15 +12,15 @@ void showGoogleDialog(BuildContext context) {
       pageBuilder: (_, __, ___) {
         return Center(
             child: Container(
-          height: 600,
-          width: 700,
+          height: 625,
+          width: 600,
           margin: EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
+            //ignore: prefer_const_literals_to_create_immutables
             gradient: LinearGradient(
-              // ignore: prefer_const_literals_to_create_immutables
               colors: [
-                Color.fromARGB(255, 255, 255, 255),
-                Color.fromARGB(255, 167, 165, 154),
+                Color.fromARGB(255, 255, 216, 155),
+                Color.fromARGB(255, 25, 84, 123),
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -35,90 +35,117 @@ void showGoogleDialog(BuildContext context) {
             Padding(
                 padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: Text("Interview Process",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                      decoration: TextDecoration.none,
-                      color: Color.fromARGB(255, 189, 42, 42),
-                    ))),
+                        fontSize: 30,
+                        decoration: TextDecoration.none,
+                        color: Color.fromARGB(255, 0, 0, 0)))),
             Divider(
                 height: 1,
                 thickness: 2,
                 indent: 20,
                 endIndent: 20,
                 color: Color.fromARGB(255, 7, 83, 30)),
-            Text(
-              "The interview Process is as follows:",
-              style: TextStyle(
-                decoration: TextDecoration.none,
-                fontSize: 20,
-              ),
-              textAlign: TextAlign.center,
-            ),
-            Container(
-                height: 500,
-                width: 650,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.green[200],
+            SizedBox(height: 15),
+            Column(
+              children: [
+                Container(
+                  width: 360,
+                  height: 85,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 26, 115, 232),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "1. The first step is the recruiter resume review. A recruiter will take a look at your resume and decide if you are a good candidate in order to continue through the hiring process. Thankfully, Google have their own tips on how to craft a good resume on their website, so check it our for some tips.",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
                 ),
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                          textAlign: TextAlign.center,
-                          "1. Resume Screening: A recruiter will take a look at your application and resume. It is recommended that you have a LinkedIn and Github as well",
-                          style: TextStyle(
-                            decoration: TextDecoration.none,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w700,
-                          )),
-                      SizedBox(height: 17),
-                      Text(
-                          textAlign: TextAlign.center,
-                          "2. A recruiter will call if your resume passed the screening. It will last around 20 to 30 minutes and will be non-technical. Questions revolve around your background. Stay connected to the recruiter, since they will answer most of your questions",
-                          style: TextStyle(
-                            decoration: TextDecoration.none,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w700,
-                          )),
-                      SizedBox(height: 17),
-                      Text(
-                          textAlign: TextAlign.center,
-                          "3. Here is what all the LeetCode preperation comes into play, the online technical interview. The interview will last 45-60 minutes on Google meets. For SWE roles, a Doc will be shared and an algorithm style question will be given. Good Luck and remain calm!",
-                          style: TextStyle(
-                            decoration: TextDecoration.none,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w700,
-                          )),
-                      SizedBox(height: 17),
-                      Text(
-                          textAlign: TextAlign.center,
-                          "4. The technical interviews continue! The onsite interview is the lengthiest part, and may be at Google's offices or by video. They will be 6 back to back interviews lasting 45 minutes each, one of them being an informal lunch interview. Good Luck!",
-                          style: TextStyle(
-                            decoration: TextDecoration.none,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w700,
-                          )),
-                      SizedBox(height: 17),
-                      Text(
-                        textAlign: TextAlign.center,
-                        "5. After the interviews, interviewers grade your performance using a standard feedback form. Feedback forms and recommendation then go to a third party hiring committee to eliminiate bias. If a response doesn't come past a week or two, politely contact your recruiter.",
-                        style: TextStyle(
-                          decoration: TextDecoration.none,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      SizedBox(height: 17),
-                      Text(
-                        textAlign: TextAlign.center,
-                        "6. If everything went well, congratulations, your hired! The final step is team-matching and salary negotiation. You'll have interviews with team members to find your best fit, and an interview with your recruiter to negotiate your salary. If you got rejected, you can reapply in 90 days.",
-                        style: TextStyle(
-                          decoration: TextDecoration.none,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      )
-                    ]))
+                SizedBox(height: 10),
+                Container(
+                  width: 360,
+                  height: 100,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 26, 115, 232),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "2. If all goes well, the recruiter will schedule a 20 to 30 minute talk to find out more about your background, and your goals pretaining to Google. The next step, if everything goes as planned, are the phone screens.",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 360,
+                  height: 100,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 26, 115, 232),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      //TODO:Fix these statements and edit box sizes
+                      "3. This is the first part of the On Site interviews. They will be a mix of 4 different interviews, some one on one, and some two to one. There are 4 segments of 45 minutes each and they will consist of technical questions, white board questions, and company culture questions.",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 360,
+                  height: 100,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 26, 115, 232),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "4. The second part of the on-site interviews will be more open ended, and will consist of three 45 minute sessions. These will focus on higher level technical questions and how you can be a best fit for the company. These could be conducted by either hiring managers or engineers.",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 360,
+                  height: 125,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 26, 115, 232),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "5. The hiring team must reach a unanimous decision to hire you. Even if one team member disagrees, its an automatic disqualification. The acceptance offer should come after about 2 weeks after your interviews are complete. Any longer and that usually means you got rejected, and no feedback is commonly provided. You can apply again after 6 months to a year. ",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
+                ),
+              ],
+            )
           ])),
         ));
       });
@@ -134,20 +161,21 @@ void showNetflixDialog(BuildContext context) {
       pageBuilder: (_, __, ___) {
         return Center(
             child: Container(
-          height: 500,
-          width: 700,
+          height: 700,
+          width: 600,
           margin: EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
+            color: Colors.black,
             // ignore: prefer_const_literals_to_create_immutables
-            gradient: LinearGradient(
-              // ignore: prefer_const_literals_to_create_immutables
-              colors: [
-                Color.fromARGB(255, 119, 3, 3),
-                Color.fromARGB(255, 24, 23, 23),
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
+            // gradient: LinearGradient(
+            //   colors: [
+            //     //Color.fromARGB(255, 255, 216, 155),
+            //     //Color.fromARGB(255, 25, 84, 123),
+            //     Color.fromARGB(255, 103, 103, 104)
+            //   ],
+            //   begin: Alignment.topLeft,
+            //   end: Alignment.bottomRight,
+            // ),
             borderRadius: BorderRadius.circular(20),
           ),
           // ignore: prefer_const_constructors
@@ -158,108 +186,117 @@ void showNetflixDialog(BuildContext context) {
             Padding(
                 padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: Text("Interview Process",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                      decoration: TextDecoration.none,
-                      color: Color.fromARGB(255, 252, 248, 248),
-                    ))),
+                        fontSize: 30,
+                        decoration: TextDecoration.none,
+                        color: Colors.white))),
             Divider(
                 height: 1,
                 thickness: 2,
                 indent: 20,
                 endIndent: 20,
-                color: Color.fromARGB(255, 7, 83, 30)),
-            Text(
-              "The interview Process is as follows:",
-              style: TextStyle(
-                decoration: TextDecoration.none,
-                fontSize: 20,
-              ),
-              textAlign: TextAlign.center,
-            ),
+                color: Color.fromARGB(255, 131, 16, 16)),
+            SizedBox(height: 15),
             Column(
               children: [
                 Container(
-                  width: 650,
-                  height: 65,
+                  width: 360,
+                  height: 95,
+                  padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    //TODO:Add white BoxShadow
+                    color: Color.fromARGB(255, 131, 16, 16),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
                       textAlign: TextAlign.center,
-                      "1. The first step is the recruiter pre-screen. If a recruiter likes your resume, he/she will give you a call for about 30 minutes. They will more than likely gauge enthusiasm for the position you are applying to.",
+                      "1. The first step is the recruiter pre-screen. If a recruiter likes your resume or LinkedIn profile, they will schedule about 30 minutes to chat, sending their core values presentation slide prior. Don't skip this, as interviews are known to focus on culture fit",
                       style: TextStyle(
+                        color: Colors.black,
                         decoration: TextDecoration.none,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
                       )),
                 ),
                 SizedBox(height: 10),
                 Container(
-                  width: 660,
-                  height: 70,
+                  width: 360,
+                  height: 100,
+                  padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    //TODO:Add white BoxShadow
+                    color: Color.fromARGB(255, 131, 16, 16),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
                       textAlign: TextAlign.center,
-                      "2. If you get through to the next round, you will not have the technical screen, which is two parts. The first part is a 15 minute behavioral interview, and the second part is the technical round. You can either do technical questions or do a 6-8 hour take home coding assessment.",
+                      "2. If you get through to the next round, you will now have the technical screen, which is two parts. The first part is a 15 minute behavioral interview, and the second part is the technical round. You can either do technical questions or do a 6-8 hour take home coding assessment.",
                       style: TextStyle(
+                        color: Colors.black,
                         decoration: TextDecoration.none,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
                       )),
                 ),
                 SizedBox(height: 10),
                 Container(
-                  width: 660,
-                  height: 70,
+                  width: 360,
+                  height: 100,
+                  padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    //TODO:Add white BoxShadow
+                    color: Color.fromARGB(255, 131, 16, 16),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
                       textAlign: TextAlign.center,
                       "3. This is the first part of the On Site interviews. They will be a mix of 4 different interviews, some one on one, and some two to one. There are 4 segments of 45 minutes each and they will consist of technical questions, white board questions, and company culture questions.",
                       style: TextStyle(
+                        color: Colors.black,
                         decoration: TextDecoration.none,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
                       )),
                 ),
                 SizedBox(height: 10),
                 Container(
-                  width: 660,
-                  height: 70,
+                  width: 360,
+                  height: 100,
+                  padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    //TODO:Add white BoxShadow
+                    color: Color.fromARGB(255, 131, 16, 16),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
                       textAlign: TextAlign.center,
                       "4. The second part of the on-site interviews will be more open ended, and will consist of three 45 minute sessions. These will focus on higher level technical questions and how you can be a best fit for the company. These could be conducted by either hiring managers or engineers.",
                       style: TextStyle(
+                        color: Colors.black,
                         decoration: TextDecoration.none,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
                       )),
                 ),
                 SizedBox(height: 10),
                 Container(
-                  width: 660,
-                  height: 76,
+                  width: 360,
+                  height: 125,
+                  padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    //TODO:Add white BoxShadow
+                    color: Color.fromARGB(255, 131, 16, 16),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                   child: Text(
                       textAlign: TextAlign.center,
                       "5. The hiring team must reach a unanimous decision to hire you. Even if one team member disagrees, its an automatic disqualification. The acceptance offer should come after about 2 weeks after your interviews are complete. Any longer and that usually means you got rejected, and no feedback is commonly provided. You can apply again after 6 months to a year. ",
                       style: TextStyle(
+                        color: Colors.black,
                         decoration: TextDecoration.none,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
                       )),
                 ),
               ],

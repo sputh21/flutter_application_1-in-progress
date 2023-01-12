@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shadowColor: Colors.white60,
-                    primary: Color.fromARGB(0, 255, 255, 255),
+                    backgroundColor: Color.fromARGB(0, 255, 255, 255),
                     padding: EdgeInsets.all(10),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20))),
@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shadowColor: Colors.red[700],
-                    primary: Color.fromARGB(0, 255, 255, 255),
+                    backgroundColor: Color.fromARGB(0, 255, 255, 255),
                     padding: EdgeInsets.all(10),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20))),
@@ -92,7 +92,7 @@ class MyApp extends StatelessWidget {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shadowColor: Colors.blue[300],
-                    primary: Color.fromARGB(0, 255, 255, 255),
+                    backgroundColor: Color.fromARGB(0, 255, 255, 255),
                     padding: EdgeInsets.all(10),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20))),
@@ -120,7 +120,7 @@ class MyApp extends StatelessWidget {
               SizedBox(width: 10),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(0, 255, 255, 255),
+                    backgroundColor: Color.fromARGB(0, 255, 255, 255),
                     padding: EdgeInsets.all(10),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20))),
@@ -149,7 +149,7 @@ class MyApp extends StatelessWidget {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shadowColor: Colors.green[800],
-                    primary: Color.fromARGB(0, 255, 255, 255),
+                    backgroundColor: Color.fromARGB(0, 255, 255, 255),
                     padding: EdgeInsets.all(10),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20))),
@@ -178,7 +178,7 @@ class MyApp extends StatelessWidget {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     shadowColor: Colors.orange[800],
-                    primary: Color.fromARGB(0, 255, 255, 255),
+                    backgroundColor: Color.fromARGB(0, 255, 255, 255),
                     padding: EdgeInsets.all(10),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20))),
