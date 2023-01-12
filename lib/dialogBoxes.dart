@@ -12,7 +12,7 @@ void showGoogleDialog(BuildContext context) {
       pageBuilder: (_, __, ___) {
         return Center(
             child: Container(
-          height: 625,
+          height: 725,
           width: 600,
           margin: EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
@@ -70,7 +70,7 @@ void showGoogleDialog(BuildContext context) {
                 SizedBox(height: 10),
                 Container(
                   width: 360,
-                  height: 100,
+                  height: 85,
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 26, 115, 232),
@@ -89,7 +89,7 @@ void showGoogleDialog(BuildContext context) {
                 SizedBox(height: 10),
                 Container(
                   width: 360,
-                  height: 100,
+                  height: 125,
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 26, 115, 232),
@@ -98,26 +98,7 @@ void showGoogleDialog(BuildContext context) {
                   child: Text(
                       textAlign: TextAlign.center,
                       //TODO:Fix these statements and edit box sizes
-                      "3. This is the first part of the On Site interviews. They will be a mix of 4 different interviews, some one on one, and some two to one. There are 4 segments of 45 minutes each and they will consist of technical questions, white board questions, and company culture questions.",
-                      style: TextStyle(
-                        color: Colors.black,
-                        decoration: TextDecoration.none,
-                        fontSize: 10,
-                        fontWeight: FontWeight.w300,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Container(
-                  width: 360,
-                  height: 100,
-                  padding: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 26, 115, 232),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Text(
-                      textAlign: TextAlign.center,
-                      "4. The second part of the on-site interviews will be more open ended, and will consist of three 45 minute sessions. These will focus on higher level technical questions and how you can be a best fit for the company. These could be conducted by either hiring managers or engineers.",
+                      "3. It's time for the phone screens. Depending on the role, there will be either one or two screens, lasting 45-60 minutes each. They will be over Google Meets, and will differ depending on the role. For the software engineer role, it will most likely be a shared Google Doc, with questions dealing with Data Structures and Algorithms. There may also be a few behavioral questions involved.",
                       style: TextStyle(
                         color: Colors.black,
                         decoration: TextDecoration.none,
@@ -136,7 +117,26 @@ void showGoogleDialog(BuildContext context) {
                   ),
                   child: Text(
                       textAlign: TextAlign.center,
-                      "5. The hiring team must reach a unanimous decision to hire you. Even if one team member disagrees, its an automatic disqualification. The acceptance offer should come after about 2 weeks after your interviews are complete. Any longer and that usually means you got rejected, and no feedback is commonly provided. You can apply again after 6 months to a year. ",
+                      "4. Here comes the hardest part of the interview process, the onsites. These are a series of 6 back to back interviews, each 45 minutes each. One of these will be a lunch with a future team member should you land the position. Depending on the role, the questions will differ heavily, and these are some of if not the  most difficult questions you'll have to answer.",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 360,
+                  height: 190,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 26, 115, 232),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "5. After the onsites, feedback forms are created by your interviewers, which are sent to a third party hiring committee to remove bias. Performance on each round will be evaluated and given a final recommendation. The third party will evaluate you on the following 4 qualities: Role-related knowledge, general cognitive ability, leadership, as well as culture fit. All you can do now at this point is wait. 4 responses come out of this, a hire, hire+team-matching, more information needed(typically another interview), or a rejection. A rejected candidate can re-apply within 90 days.  ",
                       style: TextStyle(
                         color: Colors.black,
                         decoration: TextDecoration.none,
