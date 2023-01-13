@@ -17,7 +17,7 @@ void showGoogleDialog(BuildContext context) {
           margin: EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
             //ignore: prefer_const_literals_to_create_immutables
-            color: Color.fromARGB(255, 241, 243, 244),
+            color: Color.fromARGB(255, 177, 178, 179),
             borderRadius: BorderRadius.circular(20),
           ),
           // ignore: prefer_const_constructors
@@ -120,7 +120,7 @@ void showGoogleDialog(BuildContext context) {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     border: Border.all(
-                        color: Color.fromARGB(255, 251, 188, 6),
+                        color: Color.fromARGB(255, 189, 143, 5),
                         width: 0.5,
                         style: BorderStyle.solid),
                     boxShadow: [
@@ -143,7 +143,7 @@ void showGoogleDialog(BuildContext context) {
                       textAlign: TextAlign.center,
                       "3. It's time for the phone screens. Depending on the role, there will be either one or two screens, lasting 45-60 minutes each. They will be over Google Meets, and will differ depending on the role. For the software engineer role, it will most likely be a shared Google Doc, with questions dealing with Data Structures and Algorithms. There may also be a few behavioral questions involved.",
                       style: TextStyle(
-                        color: Color.fromARGB(255, 251, 188, 6),
+                        color: Color.fromARGB(255, 175, 132, 3),
                         decoration: TextDecoration.none,
                         fontSize: 10,
                         fontWeight: FontWeight.w300,
@@ -242,7 +242,7 @@ void showNetflixDialog(BuildContext context) {
           width: 400,
           margin: EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
-            color: Colors.black,
+            color: Color.fromARGB(255, 51, 51, 51),
             borderRadius: BorderRadius.circular(20),
           ),
           // ignore: prefer_const_constructors
@@ -724,20 +724,11 @@ void showAppleDialog(BuildContext context) {
       pageBuilder: (_, __, ___) {
         return Center(
             child: Container(
-          height: 500,
-          width: 700,
+          height: 550,
+          width: 400,
           margin: EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
-            // ignore: prefer_const_literals_to_create_immutables
-            gradient: LinearGradient(
-              // ignore: prefer_const_literals_to_create_immutables
-              colors: [
-                Color.fromARGB(255, 0, 0, 0),
-                Color.fromARGB(255, 109, 108, 108),
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
+            color: Color.fromARGB(255, 177, 177, 177),
             borderRadius: BorderRadius.circular(20),
           ),
           // ignore: prefer_const_constructors
@@ -748,24 +739,165 @@ void showAppleDialog(BuildContext context) {
             Padding(
                 padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: Text("Interview Process",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                      decoration: TextDecoration.none,
-                      color: Color.fromARGB(255, 252, 248, 248),
-                    ))),
+                        fontSize: 30,
+                        decoration: TextDecoration.none,
+                        color: Colors.black))),
             Divider(
                 height: 1,
                 thickness: 2,
                 indent: 20,
                 endIndent: 20,
-                color: Color.fromARGB(255, 7, 83, 30)),
-            Text(
-              "The interview Process is as follows:",
-              style: TextStyle(
-                decoration: TextDecoration.none,
-                fontSize: 20,
-              ),
-              textAlign: TextAlign.center,
-            ),
+                color: Colors.black),
+            SizedBox(height: 15),
+            Column(
+              children: [
+                Container(
+                  width: 360,
+                  height: 75,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Color.fromARGB(255, 207, 206, 206),
+                        width: 0.5,
+                        style: BorderStyle.solid),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(1, 1),
+                          blurRadius: 5,
+                          spreadRadius: 0.5),
+                      BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(0, 0),
+                        blurRadius: 0,
+                        spreadRadius: 0,
+                      )
+                    ],
+                    color: Color.fromARGB(255, 245, 245, 247),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "1. The first step is the recruiter pre-screen. If a recruiter likes your resume or contacts you, they will schedule a 15-30 minute chat to gauge interest and how your goals relate to Apple.",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 360,
+                  height: 100,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Color.fromARGB(255, 207, 206, 206),
+                        width: 0.5,
+                        style: BorderStyle.solid),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(1, 1),
+                          blurRadius: 5,
+                          spreadRadius: 0.5),
+                      BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(0, 0),
+                        blurRadius: 0,
+                        spreadRadius: 0,
+                      )
+                    ],
+                    color: Color.fromARGB(255, 245, 245, 247),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "2. If you get through, the recruiter will set up the phone screens with a hiring manager or future team member. You will have one or two screens which will consist of behavioral question and coding questions centered around data structures and algorithms, lasting around 45-60 minutes each.",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 360,
+                  height: 155,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Color.fromARGB(255, 207, 206, 206),
+                        width: 0.5,
+                        style: BorderStyle.solid),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(1, 1),
+                          blurRadius: 5,
+                          spreadRadius: 0.5),
+                      BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(0, 0),
+                        blurRadius: 0,
+                        spreadRadius: 0,
+                      )
+                    ],
+                    color: Color.fromARGB(255, 245, 245, 247),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "3. The onsite interview is the next step. It will last about 6 hours and you will meet with anywhere from 8-15 people, with interviews varying between 1 on 1 or 2 on 1. Each interview will last about 45-60 minutes. For 2 on 1 interviews, cross examination by the other interviewer could happen if you are answering a question asked by one interviewer. These interviews will be a mix of behavioral, coding, and domain knowledge dealing with Apple's products.",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
+                ),
+                SizedBox(height: 10),
+                Container(
+                  width: 360,
+                  height: 115,
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Color.fromARGB(255, 207, 206, 206),
+                        width: 0.5,
+                        style: BorderStyle.solid),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(1, 1),
+                          blurRadius: 5,
+                          spreadRadius: 0.5),
+                      BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(0, 0),
+                        blurRadius: 0,
+                        spreadRadius: 0,
+                      )
+                    ],
+                    color: Color.fromARGB(255, 245, 245, 247),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                      textAlign: TextAlign.center,
+                      "4. If you get rejected, you will have to wait between 3-6 months before applying again, however Apple considers your profile for multiple positions, and if you match, will set up another series of interviews. If you get accepted, Apple will make an offer, send documents, and negotiations can start from there",
+                      style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w300,
+                      )),
+                ),
+              ],
+            )
           ])),
         ));
       });
