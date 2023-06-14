@@ -18,11 +18,10 @@ class MyApp extends StatelessWidget {
         drawer: NavBar(),
         appBar: AppBar(
           title: const Text("LeetCodeCharts Home"),
-          backgroundColor: Colors.black,
-          foregroundColor: Color.fromARGB(227, 190, 74, 27),
+          backgroundColor: Color.fromARGB(255, 43, 45, 82),
+          foregroundColor: Color(0xFF9674d4),
           centerTitle: true,
           elevation: 10,
-          shadowColor: Colors.red,
         ),
         body: Container(
           margin: EdgeInsets.symmetric(vertical: 20),

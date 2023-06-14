@@ -22,7 +22,7 @@ class _CountDownState extends State<CountDown> {
     super.initState();
     _stopwatch = Stopwatch();
     t = Timer.periodic(Duration(milliseconds: 30), (timer) {
-      setState(() {});
+      // setState(() {});
     });
   }
 

@@ -26,18 +26,19 @@ class NavBar extends StatelessWidget {
     }
 
     return Drawer(
-        backgroundColor: const Color.fromARGB(255, 21, 100, 105),
+        backgroundColor: Color(0xFF2f120a),
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             UserAccountsDrawerHeader(
               accountEmail: const Text("Example@Exmaple.org",
-                  style: TextStyle(fontSize: 20)),
+                  style: TextStyle(
+                      fontSize: 20, color: Color.fromARGB(255, 255, 255, 255))),
               accountName:
                   const Text("Example Example", style: TextStyle(fontSize: 20)),
               margin: const EdgeInsets.fromLTRB(0, 0, 0, 0),
               decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 7, 79, 146),
+                color: Color.fromARGB(255, 41, 63, 57),
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
@@ -46,45 +47,43 @@ class NavBar extends StatelessWidget {
               width: 5,
             ),
             ListTile(
-              leading: Icon(Icons.home_outlined, size: 40),
-              title: Text("Homepage"),
+              leading:
+                  Icon(Icons.home_outlined, color: Color(0xFFB6714F), size: 40),
+              title: Text("Homepage",
+                  style: TextStyle(color: Color.fromARGB(255, 231, 190, 178))),
               onTap: _homepage,
             ),
-            const Divider(color: Colors.black, height: 1, thickness: 1),
             ListTile(
-              leading: Icon(Icons.watch, size: 40),
-              title: Text(
-                "Stopwatch",
-              ),
+              leading: Icon(Icons.watch, size: 40, color: Color(0xFFB6714F)),
+              title: Text("Stopwatch",
+                  style: TextStyle(color: Color.fromARGB(255, 231, 190, 178))),
               onTap: _timer,
             ),
-            const Divider(color: Color.fromARGB(255, 0, 0, 0), height: 1),
             ListTile(
-              leading: Icon(Icons.check_box, size: 40),
-              title: Text("Completed Problems"),
+              leading:
+                  Icon(Icons.check_box, size: 40, color: Color(0xFFB6714F)),
+              title: Text("Completed Problems",
+                  style: TextStyle(color: Color.fromARGB(255, 231, 190, 178))),
               onTap: _completedList,
             ),
-            const Divider(
-                color: Color.fromARGB(157, 0, 0, 0), height: 1, thickness: 1.0),
             ListTile(
-                leading: Icon(Icons.bar_chart, size: 40),
-                title: Text("Progression")),
-            const Divider(
-              color: Color.fromARGB(104, 0, 0, 0),
-              height: 1,
-              thickness: 1.0,
-            ),
+                leading:
+                    Icon(Icons.bar_chart, size: 40, color: Color(0xFFB6714F)),
+                title: Text("Progression",
+                    style:
+                        TextStyle(color: Color.fromARGB(255, 231, 190, 178)))),
             ListTile(
-                leading: Icon(Icons.calendar_month_rounded, size: 40),
-                title: Text("Calender")),
-            const Divider(
-              color: Color.fromARGB(83, 0, 0, 0),
-              height: 1,
-              thickness: 1.0,
-            ),
+                leading: Icon(Icons.calendar_month_rounded,
+                    size: 40, color: Color(0xFFB6714F)),
+                title: Text("Calender",
+                    style:
+                        TextStyle(color: Color.fromARGB(255, 231, 190, 178)))),
             ListTile(
-                leading: Icon(Icons.account_box_outlined, size: 40),
-                title: Text("Journey So Far"))
+                leading: Icon(Icons.account_box_outlined,
+                    color: Color(0xFFB6714F), size: 40),
+                title: Text("Journey So Far",
+                    style:
+                        TextStyle(color: Color.fromARGB(255, 231, 190, 178))))
           ],
         ));
   }
